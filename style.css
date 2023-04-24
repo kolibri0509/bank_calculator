@@ -1,0 +1,280 @@
+body {
+    font-family: "Calibri";
+    background-color: #f6f7f8 ;
+  }
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.box {
+    background-color: #ecf1f7;
+    margin-top: 60px;
+    min-width: 200px;
+    max-height: 65px;
+    border-radius: 5px;
+}
+.first {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.deposit {
+    background-color: #ecf1f7;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px; 
+}
+.depositLabel{
+    font-size: 18px; 
+}
+input {
+    /* outline: solid white 1px;
+    border-radius: 3px; */
+    outline: none;
+}
+.month {
+    background-color: #ecf1f7;
+    border: none; 
+    border-radius: 3px;
+    font-size: 15px;
+}
+#month{
+    max-width: 20px;
+}
+#deposit{
+    max-width: 70px;
+}
+.d-flex {
+    background-color: white;
+    max-width: 1000px;
+    min-height: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    border:white 1px solid;
+    border-radius: 20px;
+    box-shadow: 
+    inset -1px 25px 0px -20px rgba(0,0,0,1), 
+     -1px 25px 11px -20px rgba(174,163,163,1),
+     -25px -2px 10px -20px rgba(236,233,233,1),
+      25px -2px 10px -20px rgba(236,233,233,1)
+}
+.span {
+    display: flex;
+    justify-content: space-between;
+    color: #9299a2 ;
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(4, 102, 231);
+  padding:15px 20px;
+  border: solid 1px rgb(4, 102, 231);
+  justify-content: center;
+  max-width: 120px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 50px;
+} 
+.total {
+    margin-top: 50px;
+    min-width: 185px;
+}
+.incognito {
+    width: 40px;
+}
+i {
+    margin-left: 5px;
+    color: #9299a2  ;
+}
+.grey {
+    color: #9299a2   ;
+}
+p {
+   color:#9299a2 ;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Styling checkbox */
+    width: 20px;
+    height: 20px;
+    background-color: #ecf1f7;
+    border-radius: 3px;
+    position: absolute;
+}
+input[type="checkbox"]:hover{
+    background-color: #a7aeb8;
+}
+input[type="checkbox"]:checked {
+    background-color: #f9ea10 ;
+}
+input[type="checkbox"]:checked:hover{
+    background-color: #fcd306 ; 
+}
+label.font{
+    font-size: 20px;
+}
+label span{
+    position: relative;
+    padding-left: 35px;
+}
+[type=checkbox]:checked + span:before {
+    content: '\2714';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -1px; 
+    left: 6px;
+    font-size:20px;
+    color:#9299a2;
+} 
+.col1 {
+    height: 50px;
+}
+.monthLabel{
+    font-size: 18px;
+}
+input[type=range]  {
+    width: 250px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+    height: 7px;
+    border-radius: 5px;
+}
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background-color: #ecf1f7;
+}
+  input[type=range]::-webkit-slider-thumb {
+    background: #9299a2;
+    cursor: grab;
+    width:15px;
+    height: 15px;
+    -webkit-appearance: none;
+    margin-top: -4px;
+    box-shadow: -250px  0 0 250px  #f9ea10; 
+    border-radius: 5px;
+}
+   input[type=range]::-moz-range-track {
+    height: 5px;
+    background-color: #ecf1f7;
+} 
+  input[type=range]::-moz-range-thumb {
+    background: #9299a2;
+    cursor: grab;
+    height: 7px;
+    border-radius:5px;
+    box-shadow: -250px  0px 0px 250px   #f9ea10;
+    padding: 0px;
+    margin: 0px;
+}
+#sum {
+    font-size: 40px;
+    font-weight: bold;
+}
+.total p{
+    margin-bottom: 0;
+}
+#percent{
+    font-size: 25px;
+}
+#bid{
+    font-size: 25px;
+}
+.moused{
+    background-color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    border: solid 0px white;  
+} 
+.tooltip{
+    position: fixed;
+    background-color: white;
+    border: solid #9299a2 1px;
+    border-radius: 10px;
+    max-width: 250px;
+    padding: 10px;
+    color:#5b5f64 ;
+    box-shadow: -1px 25px 11px -20px rgba(174,163,163,1),
+    -25px -2px 10px -20px rgba(236,233,233,1),
+     25px -2px 10px -20px rgba(236,233,233,1);
+}
+@media screen and (max-width:730px){
+  .d-flex{
+    flex-wrap: wrap;
+  }
+  .total{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:580px){
+    h1{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .info{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:540px){
+    .box{
+        max-width: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    input.range{
+        max-width: 200px;
+        margin: 0;
+    }
+    h1{
+        padding: 0;
+    }
+    .incognito{
+        max-width: 2px;
+    }
+    .span{
+        justify-content: space-evenly;
+    }
+    label.font {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:470px){
+    a{
+        margin-top: 20px;
+    }
+    .box{
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width:440px){
+    .box{
+        min-width: 180px;
+    }
+    input.range{
+        max-width: 180px;
+    }
+}
