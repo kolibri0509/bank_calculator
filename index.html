@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Калькулятор вкладов</h1>
     <div class="d-flex">
         <form name="calculator">
+            <div class="table-wrap">
             <table>
                 <tr>
                     <td><div class="box">
@@ -21,6 +22,7 @@
                                 <label for="deposit" class="depositLabel">₽</label> 
                             </div>
                             <input type="range" name="money" class="range" min="50000" max="30000000"  value="1000000" >
+                            <div class="span"><div>50 000 ₽</div><div><span>30 000 000 ₽</span></div></div>
                         </div>
                     </td> 
                     <td class="incognito"></td>                              
@@ -31,39 +33,39 @@
                                 <label for="month" class="monthLabel">месяца</label> 
                             </div>
                             <input type="range" name="time" class="range" min="3" max="24" step="1" value="3" step="1">
-                        </div></td>
+                            <div class="span"><div>3 месяца</div><div>24 месяца</div></div>
+                        </div>
+                    </td>
                 </tr>
-                <tr>
-                    <td><div class="span"><div>50 000 ₽</div><div><span>30 000 000 ₽</span></div></div></td>
-                    <td></td>
-                    <td><div class="span"><div>3 месяца</div><div>24 месяца</div></div></td>
-                </tr>
+                <tr class="col3"></tr>
                 <tr class="col1">
-                    <td>
+                    <td class="row1">
                         <label class="font" for="plus1">
                             <input type="checkbox" class="plus" name="rate" id="plus1" checked>
                             <span></span> Повысить ставку</label>
                         <i class="fa fa-question-circle" aria-hidden="true" data-tooltip="Доход выше, но вносить деньги можно только в течение 30 дней с даты первого пополнения"></i>
                     </td>
                     <td></td>
-                    <td>
+                    <td class="row1">
                         <label class="font" for="plus2">
                             <input type="checkbox" class="plus" name="save" id="plus2" checked>
                             <span></span>Оставлять проценты</label>
                         <i class="fa fa-question-circle" aria-hidden="true" data-tooltip="Оставляйте проценты на вкладе, чтобы увеличить доходность"></i>
                     </td>
                 </tr>
+                <tr class="col2"></tr>
                 <tr>
                     <td>
                         <label class="font" for="plus3">
                             <input type="checkbox" class="plus" name="sub" id="plus3">
                             <span></span>Вклад с подпиской</label>
-                        <!-- <i class="fa fa-money" aria-hidden="true"></i> -->
+                        <i class="fa fa-money" aria-hidden="true"></i> 
                         <i class="fa fa-question-circle" aria-hidden="true" data-tooltip="Больше дохода и бонусов с подпиской
                              за 199 ₽/мес. Если у вас нет подписки, она оформится вместе со вкладом"></i>
                     </td>
                 </tr>
             </table>
+            </div>
             <p class="info">Пример расчета процентов по вкладу носит исключительно информационный <br>
                 характер и не является публичной офертой</p>   
         </form>
