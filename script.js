@@ -18,7 +18,16 @@ form.deposit.addEventListener('keydown',function(e){
       }
     }
 })
-
+// -----------------------------------------------------------------
+form.month.addEventListener('input', () => {
+    let inputValue = form.month.value.replace(/^0/g, '');
+    form.month.value = inputValue;
+})
+form.deposit.addEventListener('input', () => {
+    let inputDepositValue = form.deposit.value.replace(/^0/g, '');
+    form.deposit.value = inputDepositValue;
+})
+// -----------------------------------------------------------------
 form.month.addEventListener('focus',function(e){
   form.month.classList.remove('month')
   this.classList.add('moused')
