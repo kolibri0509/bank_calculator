@@ -83,9 +83,14 @@ form.month.addEventListener('keydown',function(e){
    
 function calculate(){
 let initial = +form.deposit.value
-if(!initial) return
+if(!initial){
+return
+}
 let year = form.month.value/12    
-if(!year) return
+if(!year){
+    return
+    }
+
 
 form.time.value = form.month.value;
 form.money.value = form.deposit.value;
@@ -390,9 +395,9 @@ let int = interest*100
     form.deposit.value = form.money.value;
 
     let initial = +form.money.value
-    if(!initial) return
+    if(!initial){return}
     let year = form.time.value/12    
-    if(!year) return
+    if(!year){return}
 
     let monthLabel =document.querySelector('.monthLabel')
     if(form.time.value == 3 || form.time.value == 4 || form.time.value >= 22){
