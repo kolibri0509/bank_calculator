@@ -1,5 +1,6 @@
-Банковский депозитный калькулятор.
+
+Bank deposit calculator.
 ---
 HTML, CSS, JavaScript.
 
-[Результат](https://kolibri0509.github.io/portfolio_bank_calculator/)
+[Result](https://kolibri0509.github.io/portfolio_bank_calculator/)
